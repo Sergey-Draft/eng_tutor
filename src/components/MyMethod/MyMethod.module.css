@@ -1,0 +1,220 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+.backimg {
+    height: 100vh;
+    padding-top: 100px;
+    background: white url(/src/img/pexels.jpeg) center no-repeat;
+    background-size: cover;
+
+    -webkit-animation: fade-in 2s linear; /* Safari 4+ */
+    -moz-animation: fade-in 2s linear; /* Fx 5+ */
+    -o-animation: fade-in 2s linear; /* Opera 12+ */
+    animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
+}
+
+.wrapper {
+    height: 100%;
+    background: rgba(0,0,0, 0.5);
+}
+
+.container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+}
+
+.containerInner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.methodInner {
+    width: 50%;
+    color: black;
+    margin-top: 20px;
+}
+
+.methodTitle {
+    font-size: 24px;
+    color: #19c880;
+    font-weight: 700;
+}
+
+.methodList {
+    margin-bottom: 8px;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+}
+
+.methodPoint {
+    position: relative;
+    border: 1px solid #19c880;
+    background: rgba(255,255,255, 0.8);
+    padding:15px 25px;
+    margin:12px 0 12px 40px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 35px;
+    font-size: 16px;
+}
+
+.methodPoint:hover {
+    background: #FFF;
+}
+
+.methodPoint::before {
+    line-height: 32px;
+    position: absolute;
+    top: 4px;
+    left:-40px;
+    width:40px;
+    text-align:center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background: #19c880;
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+
+}
+
+.methodPoint:hover:before {
+	width:46px;
+}
+.methodPoint:after {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	content: "";
+	height: 0;
+	width: 0;
+	border: 16px solid transparent;
+	border-left-color: #19c880;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s
+}
+.methodPoint:hover:after {
+	margin-left: 6px;
+}
+
+
+.colorSpan {
+    font-weight: 800;
+}
+
+.lessonsInner {
+    width: 50%;
+    color:black;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.lessonsTitle {
+    font-size: 24px;
+    color: #19c880;
+    font-weight: 700;
+}
+
+.lessonsList {
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.lessonsPoint {
+    padding-bottom: 15px;
+
+}
+
+.buttons {
+    display: inline-block;
+
+}
+
+.btnGreen {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #19c880;
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s  linear;
+}
+
+.btnGreen:hover {
+    background-color: #19c880 ;
+}
+
+
+
+
+@media(max-width: 991px) {
+    .backimg {
+        height: 100%;
+        padding-top: 100px;
+        background: white url(/src/img/pexels.jpeg) center no-repeat fixed;
+        background-size: cover;
+     }
+}
+
+@media(max-width: 1024px){}
+
+@media(max-width: 991px) {}
+
+@media(max-width: 768px) {
+    .intro {
+        font-size: 18px;
+    }
+    .methodTitle {
+        font-size: 20px;
+    }
+    .lessonsTitle{
+        font-size: 20px;
+    }
+    .lessonsList {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 660px) {
+    .containerInner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .methodInner{
+        width: auto;
+    }
+    .lessonsInner {
+        width: auto;
+    }
+}
+
+@media(max-width: 420px) {}
+
+@media(max-width: 340px) {}

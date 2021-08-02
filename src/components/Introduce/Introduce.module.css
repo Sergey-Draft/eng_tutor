@@ -1,0 +1,156 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+
+.backimg{
+
+    height: 100vh;
+    padding-top: 100px;
+    background: white url(/src/img/england2.jpg) center no-repeat fixed;
+    background-size: cover;
+
+    -webkit-animation: fade-in 1s linear; 
+    -moz-animation: fade-in 1s linear;
+    -o-animation: fade-in 1s linear;
+    animation: fade-in 1s linear; 
+}
+
+
+.wrapper {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.intro{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introduceInner{
+    display: flex;
+    flex-direction: row;
+  /*   flex-wrap: no-wrap; */
+    justify-content: space-around;
+}
+
+.itemPhoto {
+/*     width: 30%; */
+    text-align: left;
+}
+
+.photo{
+    padding: 0px;
+    border-radius: 0px 80px;
+    border: 8px solid rgba(25,200,128,1);
+    overflow: hidden;
+}
+
+.photo:hover {
+    box-shadow: 0 0 10px 2px #fff;
+}
+
+.itemAbout{
+/*     width: 70%; */
+    text-align: left;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+
+}
+
+
+.btnGreen {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #19c880;
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s  linear;
+}
+
+.btnGreen:hover {
+    background-color: #19c880 ;
+}
+
+
+
+
+@media(max-width: 991px){
+    .backimg {
+        height: 100%;
+        padding-top: 100px;
+        background: white url(/src/img/england22.jpg) center no-repeat fixed;
+        background-size: cover;
+     }
+
+     .wrapper {
+         height: 100%;
+     }
+    
+}
+
+@media(max-width: 768px){
+
+    .backimg {
+        height: 100%;
+        padding-top: 100px;
+        background: white url(/src/img/england22.jpg) center no-repeat fixed;
+        background-size: cover;
+     }
+
+     .wrapper {
+         height: 100%;
+     }
+
+    .introduceInner{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro{
+        font-size: 26px;
+    }
+    .itemAbout{
+        font-size: 14px;
+
+    }
+
+
+}
+
+@media(max-width: 550px){
+
+}
+
+@media(max-width: 420px) {
+
+}
+
+@media(max-width: 340px) {
+
+}
