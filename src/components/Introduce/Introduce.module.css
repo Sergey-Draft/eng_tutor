@@ -100,7 +100,7 @@
 
 
 @media(max-width: 991px){
-    .backimg {
+/*     .backimg {
         height: 100%;
         padding-top: 100px;
         background: white url(/src/img/england22.jpg) center no-repeat fixed;
@@ -109,13 +109,13 @@
 
      .wrapper {
          height: 100%;
-     }
+     } */
     
 }
 
 @media(max-width: 768px){
 
-    .backimg {
+/*     .backimg {
         height: 100%;
         padding-top: 100px;
         background: white url(/src/img/england22.jpg) center no-repeat fixed;
@@ -124,7 +124,7 @@
 
      .wrapper {
          height: 100%;
-     }
+     } */
 
     .introduceInner{
         flex-direction: column;
